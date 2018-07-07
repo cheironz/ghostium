@@ -9,7 +9,16 @@ html {
 }
 
 body {
-  font: 400 20px/1.6 $text-font-family;
+  font: 400 18px/1.6 $text-font-family;
+  line-height: 1.7em;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  text-spacing: ideograph-alpha;
+  word-break: break-all;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   background: $background-color;
   color: $text-color;
 

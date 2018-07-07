@@ -8,7 +8,9 @@
   position: relative;
 }
 
-.post-header {}
+.post-header {
+  padding-bottom: 15px;
+}
 
 .post-meta-list {
   @extend .post-item-meta-list;
@@ -131,17 +133,42 @@
   @include breakpoint(large) {
     display: none;
   }
+
+  .post-author-name {
+    padding-right: 12px;
+  }
 }
 
 .post-body {
   h1, .h1,
   h2, .h2 {
     padding-top: 30px;
-    margin-bottom: 4px;
+    margin-bottom: 12px;
 
     & ~ hr {
       margin-bottom: 0;
     }
+  }
+
+  h2 {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  h3, h4 {
+    margin-bottom: 4px;
+  }
+
+  h3, h4, h5, h6 {
+    color: #666;
+  }
+
+  h4, h5, h6 {
+    font-weight: 400;
+  }
+
+  p {
+    font-weight: 300;
   }
 }
 
