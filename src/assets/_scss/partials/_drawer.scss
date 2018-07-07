@@ -80,7 +80,7 @@
   }
 }
 
-.drawer-list {
+.drawer-list, .nav {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -94,7 +94,7 @@
   height: 8px;
 }
 
-.drawer-list-item {
+.drawer-list-item, .nav > li {
   font-family: $title-font-family;
   font-weight: 700;
   font-size: 14px;

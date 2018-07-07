@@ -2,6 +2,9 @@
 <nav tabindex="-1" class="drawer">
   <div class="drawer-container">
     <!--.drawer-search(role="search")-->
+    {{#if @blog.navigation}}
+      {{navigation}}
+    {{/if}}
     <ul role="navigation" class="drawer-list">
       {{> custom/navigation this}}
     </ul>
